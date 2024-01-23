@@ -1,8 +1,13 @@
 # Header
 
+DASH_LENGTH = 40
+print('=' * DASH_LENGTH)
+print('SALARY CALCULATOR PROGRAM :)')
+print('=' * DASH_LENGTH)
+
 # Input Code
 # Gets Salary per hour
-print("What is your monthly rate?")
+print("What is your hourly rate?")
 salary_hrs = float(input())
 
 # Gets total hours per week
@@ -30,3 +35,9 @@ print(holiday_year)
 print(vacation_days)
 # Summary Code
 
+COLUMN_LENGTH = 25
+print(float(input(f"{'Salary per hour':.<{COLUMN_LENGTH}}: {salary_hrs}")))
+print(float(input(f"{'Hours per week':.<{COLUMN_LENGTH}}: {weekly_hrs}")))
+print(float(input(f"{'Days worked per week':.<{COLUMN_LENGTH}}: {days_per_week}")))
+print(float(input(f"{'Holidays in place':.<{COLUMN_LENGTH}}: {holiday_year}")))
+print(float(input(f"{'Vacation days taken':.<{COLUMN_LENGTH}}: {vacation_days}")))
