@@ -1,16 +1,32 @@
-# This is a sample Python script.
+# Header
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Input Code
+# Gets Salary per hour
+print("What is your monthly rate?")
+salary_hrs = float(input())
 
+# Gets total hours per week
+print("How many hours do you work in a week?")
+# Hunter Should we leave this as a float if they put like 45.5 hours a week?
+weekly_hrs = float(input())
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Gets total days worked per week
+print("How many Days do you work a week?")
+days_per_week = input()
 
+# Gets total holidays off per year
+print("How many holidays do you get off every year?")
+holiday_year = input()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Hunter Schoch')
+# Gets total vacation days
+print("How many vacation days do you get for the year?")
+vacation_days = input()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Test print code can be removed and replaced when we are ready to make the columns
+print(salary_hrs)
+print(weekly_hrs)
+print(days_per_week)
+print(holiday_year)
+print(vacation_days)
+# Summary Code
+
