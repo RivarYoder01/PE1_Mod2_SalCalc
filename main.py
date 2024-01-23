@@ -1,43 +1,41 @@
-# Header
+# Started January, 23 2024
+# Due January, 29 2024
+# Written by Rivar Yoder and Hunter Schoch
+# This program takes in the users hourly salary, the hours they work per week,
+# the amount of days worked per week, the holidays off per year, and vacation days.
+# The program will then give an unadjusted salary estimation where the hourly rate
+# is multiplied by the hours worked per day and the average amount of work days per
+# year (260). It will then give an adjusted number that subtracts the holidays and
+# vacation days.
 
 DASH_LENGTH = 40
+# Establishes a 40 character width limit for the dividing lines for aesthetic purposes
+
 print('=' * DASH_LENGTH)
 print('SALARY CALCULATOR PROGRAM :)')
 print('=' * DASH_LENGTH)
 
-# Input Code
-# Gets Salary per hour
-print("What is your hourly rate?")
-salary_hrs = float(input())
-
-# Gets total hours per week
-print("How many hours do you work in a week?")
-# Hunter Should we leave this as a float if they put like 45.5 hours a week?
-weekly_hrs = float(input())
-
-# Gets total days worked per week
-print("How many Days do you work a week?")
-days_per_week = input()
-
-# Gets total holidays off per year
-print("How many holidays do you get off every year?")
-holiday_year = input()
-
-# Gets total vacation days
-print("How many vacation days do you get for the year?")
-vacation_days = input()
-
-# Test print code can be removed and replaced when we are ready to make the columns
-print(salary_hrs)
-print(weekly_hrs)
-print(days_per_week)
-print(holiday_year)
-print(vacation_days)
-# Summary Code
-
 COLUMN_LENGTH = 25
-print(float(input(f"{'Salary per hour':.<{COLUMN_LENGTH}}: {salary_hrs}")))
-print(float(input(f"{'Hours per week':.<{COLUMN_LENGTH}}: {weekly_hrs}")))
-print(float(input(f"{'Days worked per week':.<{COLUMN_LENGTH}}: {days_per_week}")))
-print(float(input(f"{'Holidays in place':.<{COLUMN_LENGTH}}: {holiday_year}")))
-print(float(input(f"{'Vacation days taken':.<{COLUMN_LENGTH}}: {vacation_days}")))
+# Forces user entries to be a specific width for aesthetic purposes
+
+salary_hrs = float(input(f"{'Salary per hour':.<{COLUMN_LENGTH}}: "))
+# User inputs their hourly rate to be multiplied with an 8-hour work day and total days(260)
+
+daily_hrs = float(input(f"{'Hours per Day':.<{COLUMN_LENGTH}}: "))
+# The amount of hours worked per week
+
+days_per_week = float(input(f"{'Days per Week':.<{COLUMN_LENGTH}}: "))
+# The amount of days worked per week
+
+holiday_year = float(input(f"{'Holidays per Year':.<{COLUMN_LENGTH}}: "))
+# Amount of days the work place is closed in a year
+
+vacation_days = float(input(f"{'Vacation Days per Year':.<{COLUMN_LENGTH}}: "))
+# Amount of days the user takes off during the year
+
+print('=' * DASH_LENGTH)
+# Calculations
+# Calculations
+print('=' * DASH_LENGTH)
+
+print('Hope this helps! :)')
