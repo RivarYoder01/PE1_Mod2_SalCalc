@@ -18,7 +18,7 @@ print('=' * DASH_LENGTH)
 COLUMN_LENGTH = 25
 # Forces user entries to be a specific width for aesthetic purposes
 
-salary_hrs = float(input(f"{'Salary per hour':.<{COLUMN_LENGTH}}: "))
+salary_hr = float(input(f"{'Salary per hour':.<{COLUMN_LENGTH}}: "))
 # User inputs their hourly rate to be multiplied with an 8-hour work day and total days(260)
 
 daily_hrs = float(input(f"{'Hours per Day':.<{COLUMN_LENGTH}}: "))
@@ -33,9 +33,14 @@ holiday_year = float(input(f"{'Holidays per Year':.<{COLUMN_LENGTH}}: "))
 vacation_days = float(input(f"{'Vacation Days per Year':.<{COLUMN_LENGTH}}: "))
 # Amount of days the user takes off during the year
 
+unadj_sal = salary_hr * daily_hrs * days_per_week * 52
+adjust_sal = salary_hr * daily_hrs * ((days_per_week * 52) - holiday_year - vacation_days)
+# Calculations for the Unadjusted Salary and Adjusted Salary
+
 print('=' * DASH_LENGTH)
-# Calculations
-# Calculations
+print(f"{'Unadjusted Salary':.<{COLUMN_LENGTH}}: ${unadj_sal:6,.2f}")
+print(f"{'Adjusted Salary':.<{COLUMN_LENGTH}}: ${adjust_sal:6,.2f}")
 print('=' * DASH_LENGTH)
+# Displays a new section with the Adjusted Salary and Unadjusted Salary
 
 print('Hope this helps! :)')
