@@ -42,6 +42,6 @@ print('=' * DASH_LENGTH)
 print(f"{'Unadjusted Salary':.<{COLUMN_LENGTH}}: ${unadj_sal:6,.2f}")
 print(f"{'Adjusted Salary':.<{COLUMN_LENGTH}}: ${adjust_sal:6,.2f}")
 print('=' * DASH_LENGTH)
-# Displays a new section with the Adjusted Salary and Unadjusted Salary
+# Displays a new section with the Adjusted Salary and Unadjusted Salary.
 
 print('Hope this helps! :)')
