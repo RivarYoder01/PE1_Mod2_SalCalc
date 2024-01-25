@@ -7,6 +7,7 @@
 # is multiplied by the hours worked per day and the average amount of work days per
 # year (260). It will then give an adjusted number that subtracts the holidays and
 # vacation days.
+# github url https://github.com/RivarYoder01/PE1_Mod2_SalCalc
 
 DASH_LENGTH = 40
 # Establishes a 40 character width limit for the dividing lines for aesthetic purposes
