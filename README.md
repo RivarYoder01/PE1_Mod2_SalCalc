@@ -1,17 +1,11 @@
 # CSC 365 Paired Programming #2 Planet_Distances
-## Written by: Rivar Yoder and Caleb Jenkinson 
-### The user will input a number 1-8 (0 to exit the program) that coorisponds to a planet on the presented menu. 
-### The program will then take the two planets and subtract their distances from eachother, giving that number back to the user. 
-### A loop will allow the user to keep putting in planets to find the distance.
-### [Planet information](https://www.universetoday.com/15462/how-far-are-the-planets-from-the-sun/) for project, average distance used.
-
-**What was Learned**
-* While and for loops
-* Nested while loops
-* Docstrings for every function
-* Metadata and version declairation at the beginning of the program
-* Error handeling for out of range numbers and not numeric variables
-* Keeping consistant variables
-* Tuples that require unpacking
-* Absolute functions
-* Tab based error handling 
+## Written by: Rivar Yoder and Hunter Schoch 
+This program takes in the users hourly salary, the hours they work per week, the amount of days worked per week, the holidays off per year, and vacation days. The program will then give an unadjusted salary estimation where the hourly rate is multiplied by the hours worked per day and the average amount of work days per year (260). It will then give an adjusted number that subtracts the holidays and vacation days.
+------------
+### **What was Learned**
+* F strings
+* User input nested into the printing of the menu
+* Addition, Subtraction, and Multiplication
+* Parenthetical Operations
+* Dash and collumn length
+* Floats 
